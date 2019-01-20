@@ -56,7 +56,8 @@ lambda式を用いない場合の実装方法の例
 	
 	print(priceList)
  
-	実行結果
+実行結果
+
 	[4300, 10500]
 
 上記サンプルにてlambda式と合わせてlist関数とfilter関数を使用しました。
