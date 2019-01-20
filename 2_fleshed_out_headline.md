@@ -43,7 +43,7 @@ lambda式を用いない場合の実装方法の例
 	paymentList.sort()
 	
 	print(paymentList)
-  
+ 
 	実行結果
 	[4300, 10500]
 
@@ -54,7 +54,7 @@ lambda式を用いない場合の実装方法の例
 	priceList.sort()
 	
 	print(priceList)
-  
+ 
 	実行結果
 	[4300, 10500]
 
