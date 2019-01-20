@@ -34,17 +34,17 @@ lambdaを使うメリットは、コードを簡潔に書けることが挙げられます。
 
 lambda式を用いない場合の実装方法の例
 
-	prices = [3000,2500,10500,4300]  
-	paymentList = []  
-	for price in prices:  
-	    if price > 3500:  
-	        paymentList.append(price)  
-	  
-	paymentList.sort()  
-	  
-	print(paymentList)  
-
-	実行結果  
+	prices = [3000,2500,10500,4300]
+	paymentList = []
+	for price in prices:
+	    if price > 3500:
+	        paymentList.append(price)
+	
+	paymentList.sort()
+	
+	print(paymentList)
+  
+	実行結果
 	[4300, 10500]
 
 これをlambda式を用いて書くと以下のようになります。
@@ -52,9 +52,9 @@ lambda式を用いない場合の実装方法の例
 	prices = [3000,2500,10500,4300]
 	priceList = list(filter(lambda price:price > 3500, prices))
 	priceList.sort()
-	  
+	
 	print(priceList)
-
+  
 	実行結果
 	[4300, 10500]
 
