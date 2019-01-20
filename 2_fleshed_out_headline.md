@@ -11,7 +11,7 @@ lambdaとは、無名関数（＝名前が付いていない関数）を表現する記法の一つです。
 
 これに対し、lambda式を使って、a,dを引数として受け取りその和を返す無名関数を記述すると・・・
 
-`lambda a,b : a+b`
+	lambda a,b : a+b
 
 となります。
 
@@ -19,12 +19,12 @@ lambdaとは、無名関数（＝名前が付いていない関数）を表現する記法の一つです。
 defに似ていますが、defが名前付きの関数を定義するのに対し、lambdaは無名の関数を定義します。
 
 lambdaの隣にある a,b は引数を表し、
-def func(a,b):
+	def func(a,b):
 のカッコの中と同じ意味を持っています。
 ちなみに、引数はカンマで区切れば複数使えますし、引数が無くても構いません。
 
 コロンを挟んで右側の a+b が返り値を表し、
-return a+b
+	return a+b
 と同じ意味です。
 戻り値は必ず書かなくてはいけません。
 
@@ -38,33 +38,29 @@ lambdaを使うメリットは、コードを簡潔に書けることが挙げられます。
 
 lambda式を用いない場合の実装方法の例
 
-`
-prices = [3000,2500,10500,4300]  
-paymentList = []  
-for price in prices:  
-    if price > 3500:  
-        paymentList.append(price)  
-  
-paymentList.sort()  
-  
-print(paymentList)  
+	prices = [3000,2500,10500,4300]  
+	paymentList = []  
+	for price in prices:  
+	    if price > 3500:  
+	        paymentList.append(price)  
+	  
+	paymentList.sort()  
+	  
+	print(paymentList)  
 
-実行結果  
-[4300, 10500]
-`
+	実行結果  
+	[4300, 10500]
 
 これをlambda式を用いて書くと以下のようになります。
 
-`
-prices = [3000,2500,10500,4300]
-priceList = list(filter(lambda price:price > 3500, prices))
-priceList.sort()
-  
-print(priceList)
+	prices = [3000,2500,10500,4300]
+	priceList = list(filter(lambda price:price > 3500, prices))
+	priceList.sort()
+	  
+	print(priceList)
 
-実行結果
-[4300, 10500]
-`
+	実行結果
+	[4300, 10500]
 
 上記サンプルにてlambda式と合わせてlist関数とfilter関数を使用しました。
 list関数は引数の値をlist型へ変換し、その後、sort()関数にて並び替えを行うために使用しています。
